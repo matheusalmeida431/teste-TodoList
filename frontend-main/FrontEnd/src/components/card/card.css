@@ -1,0 +1,122 @@
+.card {
+  align-self: center;
+  width: 95%;
+  max-width: 95%;
+  min-height: 52px;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  padding: 8px;
+  padding-bottom: 0;
+  border-radius: 4px;
+  /*margin-bottom: 10px;*/
+  position: relative;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.card button:active, .card button:focus{
+  outline: 0;
+}
+.card:hover .card-description {
+  display: block;
+}
+.card:hover .buttons {
+  display: flex;
+}
+.card:hover .navarrows {
+  display: flex;
+}
+
+.card-description {
+  display: none;
+}
+.buttons{
+  width: 20%;
+  height: 33%;
+  display: none;
+  flex-direction: row;
+  align-items: center;
+  justify-content: right;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.buttons button{
+  display: grid;
+  place-content: center;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  width: 16px;
+  height: 16px;
+  border-radius: 20%;
+  padding: 12px;
+  background-color: transparent;
+}
+.buttons button:hover {
+  border-color: transparent;
+}
+
+.navarrows{
+  width: 20%;
+  height: 33%;
+  display: none;
+  flex-direction: row;
+  align-items: center;
+  justify-content: right;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+.navarrows button{
+  display: grid;
+  place-content: center;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  width: 16px;
+  height: 16px;
+  border-radius: 20%;
+  padding: 12px;
+  background-color: transparent;
+}
+.navarrows button:hover{
+  border-color: transparent;
+}
+
+.colorPicker {
+  display: flex;
+  justify-content: right;
+  right: 0;
+  margin-block: 8px;
+}
+
+.editContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding-top: 8px;
+  padding-bottom: 16px;
+}
+.editContainer input {
+  font-size: 24;
+  text-align: center;
+  border-color: transparent;
+  border-radius: 8px;
+  background-color: #f4f4f4;
+  color: black;
+}
+.saveButton {
+  color: white;
+  height: 30px;
+  background-color: #4caf50;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.infoContainer {
+  max-width: 80%; /* ajuste o valor de acordo com a largura da div */
+  text-align: justify;
+  overflow-wrap: break-word;
+  white-space: pre-wrap;
+}

@@ -1,0 +1,102 @@
+.minimize-column {
+  background-color: transparent;
+  border: none;
+  padding: 2px 5px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.column {
+  width: 100%; /* Ou ajuste conforme necessário */
+  background-color: #f4f4f4;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 10px;
+  flex: 1;
+  min-width: 250px;
+  max-width: 100%;
+  max-height: auto;
+  overflow-y: auto;
+}
+
+.column button:active, .column button:focus, .column input {
+  outline: 0;
+}
+
+.column-header {
+  padding-left: 8px;
+  min-height: 10%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.column-header input {
+  align-self: center;
+  font-weight: bold;
+  font-size: 22px;
+  background-color: transparent;
+  width: 100%;
+}
+
+.add-task {
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.add-task input {
+  height: 100%;
+  width: 100%;
+  max-width: 250px;
+  font-size: 100%;
+  border-color: #28a745;
+  border-width: 4px;
+  border-radius: 4px 0 0 4px;
+}
+
+.add-task-button {
+  height: 100%;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  padding: 4px 8px;
+  border-radius: 0 4px 4px 0;
+  cursor: pointer;
+}
+
+.card-grid {
+  display: flex;
+  flex-direction: column;
+  margin-top: 5px;
+  padding: 10px;
+  justify-content: center;
+}
+
+/* Ajustes para telas menores */
+@media (max-width: 1200px) {
+  .column-header input {
+      font-size: 18px;
+  }
+
+  .add-task input {
+      max-width: 150px;
+  }
+
+  .add-task-button {
+      padding: 4px 8px;
+  }
+  
+}
+
+@media (min-width: 768px) and (max-width: 1200px) {
+  .column {
+      width: 48%;
+  }
+}
+
+.column::-webkit-scrollbar {
+  display: none;
+}

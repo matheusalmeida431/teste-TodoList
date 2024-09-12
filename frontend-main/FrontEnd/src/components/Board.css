@@ -1,0 +1,48 @@
+.board {
+  display: flex;
+  gap: 20px;
+  padding-top: 80px;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+
+.add-column {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  background-color: #f4f4f47e;
+  border: 1px dashed #474747;
+  border-radius: 5px;
+  padding: 10px;
+  width: 25%; /* Define a largura de cada coluna */
+  height: auto;
+  max-height: auto;
+}
+.add-column button:active, .add-column button:focus{
+  outline-color: #fff;
+}
+.add-column-button {
+  width: 50px;
+  height: 50px;
+  display: grid;
+  align-content: center;
+  justify-content: center;
+  border-radius: 50%;
+  border: none;
+  background-color: #2196f3;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .board {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 200px;
+  }
+
+  .add-column {
+
+    width: 100%; /* Em telas pequenas, faz as colunas ocuparem toda a largura */
+  }
+}
